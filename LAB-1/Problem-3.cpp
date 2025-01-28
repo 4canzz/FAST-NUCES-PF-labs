@@ -8,7 +8,7 @@ void encode(char buffer[], int key);
 void decode(char buffer[], int key);
 
 int main () {
-    int key;
+    int key, option;
     char buffer[100000];
 
     cout << "Text: ";
@@ -17,8 +17,20 @@ int main () {
     cout << "enter key: ";
     cin >> key;
 
-    encode(buffer, key);
-    decode(buffer, key);
+    cout << "Enter 0 to encrypt the message, and 1 to decrypt the message: ";
+    cin >> option;
+
+    do {
+        cout << "please enter only 0 or 1: ";
+        cin >> option;
+    } while (option != 1 && option != 0);
+
+    if (option == 0) {
+        encode(buffer, key);
+    }
+    else if (option == 1) { 
+        decode(buffer, key);
+    }
 
     return 0;
 }
