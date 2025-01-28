@@ -4,6 +4,9 @@
 #include <string>
 using namespace std;
 
+void encode(char buffer[], int key);
+void decode(char buffer[], int key);
+
 int main () {
     int key;
     char buffer[100000];
@@ -14,6 +17,13 @@ int main () {
     cout << "enter key: ";
     cin >> key;
 
+    encode(buffer, key);
+    decode(buffer, key);
+
+    return 0;
+}
+
+void encode(char buffer[], int key) {
     cout << "Encrypted Text: ";
     for (int i = 0; buffer[i] != '\0'; i++) {
         if (static_cast<char>(buffer[i] + key) == '#') cout << " ";
@@ -21,10 +31,18 @@ int main () {
             cout << static_cast<char>(buffer[i] + key);
         }
     }
+    cout << ", ";
+}
 
+void decode(char buffer[], int key) {
+    cout << "Decrypted Text: ";
+    for (int i = 0; buffer[i] != '\0'; i++) {
+        if (static_cast<char>(buffer[i] - key) == '#') cout << " ";
+        else {
+            cout << static_cast<char>(buffer[i] - key);
+        }
+    }
     cout << endl;
-
-    return 0;
 }
 
 /*Exercise 3: (10 points)
