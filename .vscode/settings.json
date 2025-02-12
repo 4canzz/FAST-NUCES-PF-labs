@@ -1,6 +1,14 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "format": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "enabled"
 }
