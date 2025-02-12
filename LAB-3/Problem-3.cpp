@@ -25,14 +25,16 @@ int main()
 /*Exercise 3: (10 points)
 Consider following main function and implement the ReverseSentence function
 void main()
+int main()
 {
-char input[100];
-cin.getline(input,100);
-//For example, user enters National library.
-char *rev=ReverseSentence(input);
-cout&lt;&lt;rev&lt;&lt;endl;
-// The data pointed to by rev should be yrarbil lanoitaN.
-delete [] rev;
+    char input[100];
+    cin.getline(input,100);
+    //For example, user enters National library.
+    char *rev = ReverseSentence(input);
+    cout << rev << endl;
+    // The data pointed to by rev should be yrarbil lanoitaN.
+    delete [] rev;
+    return 0;
 }
 The length of the character array pointed to by rev should be as per the size of the sentence
 entered by the user.
