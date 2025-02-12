@@ -15,7 +15,7 @@ void printArr(int arr[], int arrSize){
 }
 
 void populateArray(int arr[], int size) {
-	cout << "populate array";
+	cout << "populate array: ";
 	for (int i = 0; i < size; i++){
 		cin >> arr[i];
 	}

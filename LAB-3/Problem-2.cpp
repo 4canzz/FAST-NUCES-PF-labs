@@ -40,6 +40,7 @@ void Print_Max(int arr[], int arrSize) {
 }
 
 int * Merge(int * &array1, int size1, int * &array2, int size2 ) {
+    cout << "Array3: ";
     int * array3 = new int[size1 + size2];
     for (int i = 0; i < size1; i++) {
         array3[i] = array1[i];
