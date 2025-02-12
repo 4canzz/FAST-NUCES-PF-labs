@@ -35,3 +35,12 @@ int main() {
 
     return 0;
 }
+
+/*Exercise 3: (10 points)
+Write a code in C++ that asks the user for size of an array, then allocates the required memory
+for a dynamic array. Using pointer arithmetic ( and not the [] operator) it should then populate
+the array with data (if it is an integer array do add your rollnumber as well), display the data and
+upon completion it should deallocate the memory assigned to the array so no memory leak
+happens.
+In the space below please give your code as well as the screenshot of the output you get
+after running your code*/
