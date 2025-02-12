@@ -1,0 +1,52 @@
+Exercise 2: (10 points)
+The following code snippets all have a problem. In the answer textbox, please mention what is
+wrong with the code.
+
+a) Problem: pi declared as float * const, pi2 declared as const float *. both values are immutable.
+float piVal = 3.14;
+float * const pi = &piVal;
+float a = 2.1;
+pi = &a;
+const float * pi2 = &;piVal;
+*pi2 = 3.2;
+
+b) Problem: memory leak, 4 cannot be accessed.
+int *p = new int;
+int *q = new int;
+*p = 4;
+*q = 7;
+p = q;
+//hint can we access the 4?
+cout << “p is carrying” << *p << endl;
+cout << “q is carrying” << *q << endl;
+
+c) Problem: Free Heap block is modified after it was freed.
+int *p = new int;
+int *q = new int;
+*p = 4;
+*q = 7;
+p = q;
+delete p;
+//hint what sort of pointer q is now (ANS: a dangling pointer)
+*q = 10;
+cout << “q is carrying” << *q << endl;
+
+d) Problem: mentioned inside code snippet, within the comments
+int x, *p;
+int arr[3] = {0};
+p = &arr;//is this correct? ANS: this is wrong since arr already contains the base address of the array.
+p = &arr[0];
+//why is arr++ not possible? 
+arr++;
+//why is p++ possible? ANS: arr++ cannot be used since arr is a const pointer, p++ is to be used instead as it as it is a variable pointer to base address.
+p++;
+for (int j = 0; j < 2; j++)
+{
+    arr[j] = j + 1;
+}
+p--;
+for (int k = 0; k < 3; k++)
+{
+    cout << *p;
+    p++;
+}

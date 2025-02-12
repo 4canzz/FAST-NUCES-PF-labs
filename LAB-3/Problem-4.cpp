@@ -50,6 +50,13 @@ int main() {
 	printArr(arr, size);
 	
 	delete[] arr;
-	system("pause");
 	return 0;
 }
+
+/*Exercise 4: (10 points)
+Write a program that implements the Selection Sort algorithm to sort an array of N integers in
+ascending order. The program should:
+1. Take an integer N as input, representing the number of elements in the array.
+2. Accept N integers as input (separated by spaces).
+3. Use Selection Sort to sort the array.
+4. Print the sorted array.*/
