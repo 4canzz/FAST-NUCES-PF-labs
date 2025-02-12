@@ -25,8 +25,7 @@ void selectionSort(int arr[], int arrSize) {
 	for (int i = 0; i < arrSize; i++) {
 		int index = i;
 		for (int j = i + 1; j < arrSize; j++) {
-			if (arr[j] < arr[index])
-			{
+			if (arr[j] < arr[index]) {
 				index = j;
 			}
 		}
