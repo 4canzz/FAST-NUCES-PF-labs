@@ -11,13 +11,13 @@ int main() {
 		matrix[i] = new int[n];
 	}
 
-	cout << "Enter elements of the matrix:\n";
+	cout << "Enter elements of the matrix: "<< endl;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			cin >> matrix[i][j];
 		}
 	}
-	cout << "Original Matrix:\n";
+	cout << "Original Matrix: " << endl;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			cout << matrix[i][j] << " ";
@@ -34,7 +34,7 @@ int main() {
 			transpose[j][i] = matrix[i][j];
 		}
 	}
-	cout << "Transposed Matrix:\n";
+	cout << "Transposed Matrix:" << endl;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			cout << transpose[i][j] << " ";
@@ -50,5 +50,6 @@ int main() {
 	delete[] matrix;
 	delete[] transpose;
 
+	system("pause");
 	return 0;
 }
