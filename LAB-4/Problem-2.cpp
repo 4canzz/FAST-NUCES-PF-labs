@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-
+int main() {
 	int rows, cols;
 	cout << "Enter rows for both 2D Arrays: " << endl;
 	cin >> rows;
