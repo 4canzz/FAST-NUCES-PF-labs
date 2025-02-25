@@ -53,6 +53,6 @@ int main() {
 	return 0;
 }
 
-/*Question 4:
+/*Exercise 4: (10 marks)
 Write a C++ program to create a dynamic 2-D array of size n x n. Fill the array and find its
 transpose using double pointers. Print both the original and transposed matrices.*/

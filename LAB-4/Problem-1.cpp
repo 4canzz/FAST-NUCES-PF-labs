@@ -36,5 +36,5 @@ int main(){
 	return 0;
 }
 
-/*Question 1: (10 marks)
+/*Exercise 1: (10 marks)
 Write a C++ program that dynamically allocates a 2D integer array of size rows × cols, takes input from the user, prints the array, and then deallocates the memory.*/
