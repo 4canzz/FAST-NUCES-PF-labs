@@ -35,6 +35,12 @@ int main() {
 
 	delete[] arr;
 
-	system("pause");
 	return 0;
 }
+
+/*Question 3:
+Write a C++ program that:
+1. Dynamically allocates a 2D matrix of size rows × cols.
+2. Takes input for each element from the user.
+3. Finds and prints the minimum number in each row of the matrix.
+4. Deallocates the dynamically allocated memory.*/
