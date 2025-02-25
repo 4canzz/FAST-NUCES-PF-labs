@@ -71,7 +71,10 @@ int main() {
 	delete[] b;
 	delete[] a;
 	delete[] add;
-
-	system("pause");
+	
 	return 0;
 }
+
+/*Question 2: (10 marks)
+Write a C++ program to add two dynamic 2-D matrices (A and B) and store the result in another
+dynamic 2-D matrix (C). Assume the dimensions of both matrices are m x n.*/
