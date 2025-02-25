@@ -50,6 +50,9 @@ int main() {
 	delete[] matrix;
 	delete[] transpose;
 
-	system("pause");
 	return 0;
 }
+
+/*Question 4:
+Write a C++ program to create a dynamic 2-D array of size n x n. Fill the array and find its
+transpose using double pointers. Print both the original and transposed matrices.*/
