@@ -49,7 +49,7 @@ int main() {
     return 0;
 }
 
-/*Exercise 2: (10 points)
+/*Exercise 1: (10 points)
 Using the above example as guideline please define a struct named Student, with two data
 members: name and rollnumber .
 Write a program that demonstrates the following:
