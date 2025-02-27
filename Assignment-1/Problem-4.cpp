@@ -1,49 +1,90 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-struct candidate {
-    string name;
-    int votes;
-    float percentage;
-};
-
-int main (){
-    int numOfCandidates, totalVotes = 0, largest = 0;
-    string winner;
-    cout << "Enter the number of candidates: ";
-    cin >> numOfCandidates;
-    cin.ignore();
-    candidate* candidates = new candidate[numOfCandidates];
-
-    for (int i = 0; i < numOfCandidates; i++) {
-        cout << "Enter Candidate " << i + 1 << "'s Name: ";
-        getline(cin, candidates[i].name);
-        cout << "Enter votes: ";
-        cin >> candidates[i].votes;
-        totalVotes += candidates[i].votes;
-        cin.ignore();
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    if (n == 2) return true;
+    if (n % 2 == 0) return false;
+    for (int i = 3; i * i <= n; i += 2) {
+        if (n % i == 0) return false;
     }
+    return true;
+}
 
-    for (int i = 0; i < numOfCandidates; i++) {
-        candidates[i].percentage = ((float) candidates[i].votes / (float) totalVotes) * 100;
-    }
-
-    for (int i = 0; i < numOfCandidates; i++) {
-        if (candidates[i].votes > largest) {
-            largest = candidates[i].votes;
-            winner = candidates[i].name;
+void PickLarger(int* arr1, int* arr2, int* resizedArr, int arrSize) {
+    int n = 2;
+    for (int i = 0; i < arrSize; i++) {
+        if (arr1[i] < arr2[i]) {
+            resizedArr[i] = arr2[i];
+        }
+        else if (arr1[i] > arr2[i]) {
+            resizedArr[i] = arr1[i];
+        }
+        else {
+            resizedArr[i] = arr1[i];
         }
     }
-
-    cout << "Candidate\tVotes Recieved\t%of Total Votes" << endl;
-    for (int i = 0; i < numOfCandidates; i++) {
-        cout << candidates[i].name << "\t\t" << candidates[i].votes << "\t\t" << candidates[i].percentage << endl;
+    int primeCount = 0;
+    int num = 2;
+    while (primeCount < arrSize) {
+        if (isPrime(num)) {
+            resizedArr[arrSize + primeCount] = num;
+            primeCount++;
+        }
+        num++;
     }
-    cout << "Total\t\t" << totalVotes << endl;
-    cout << "The Winner of the Election is " << winner << endl;
+}
 
-    delete[] candidates;
+void ResizeArray(int*& arr, int oldSize, int newSize) {
+    int* newArr = new int[newSize];
+    for (int i = 0; i < oldSize; i++) {
+        newArr[i] = arr[i];
+    }
+    delete[] arr;
+    arr = newArr;
+}
+
+int main() {
+    int arrSize;
+    cout << "enter the size of array: ";
+    cin >> arrSize;
+
+    int* arr1 = new int[arrSize];
+    int* arr2 = new int[arrSize];
+    int* resizedArr = new int [arrSize * 2];
+
+    cout << "Enter elements row wise for 1st array: ";
+    for (int i = 0; i < arrSize; i++) {
+        cin >> arr1[i];
+    }
+
+    cout << "Enter elements row wise for 2nd array: ";
+    for (int i = 0; i < arrSize; i++) {
+        cin >> arr2[i];
+    }
+
+    PickLarger(arr1, arr2, resizedArr, arrSize);
+
+    ResizeArray(arr1, arrSize, 2 * arrSize);
+
+    for (int i = 0; i < arrSize * 2; i++) {
+        arr1[i] = resizedArr[i];
+    }
+
+    cout << "{";
+	for (int i = 0; i < arrSize * 2; i++) {
+		if (i == (arrSize * 2) - 1) {
+			cout << arr1[i];
+		}
+		else {
+			cout << arr1[i] << ", ";
+		}
+	}
+	cout << "}" << endl;
+
+    delete[] arr1;
+    delete[] arr2;
+    delete[] resizedArr;
     return 0;
 }
 
