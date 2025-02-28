@@ -9,6 +9,19 @@ void reverse(int* arr, int arrSize) {
     }
 }
 
+void printArr(int arr[], int arrSize){
+    cout << "{";
+    for (int i = 0; i < arrSize; i++) {
+        if (i == arrSize - 1) {
+            cout << arr[i];
+        }
+        else {
+        cout << arr[i] << ", ";
+        }
+    }
+    cout << "}" << endl;
+}
+
 int main() {
     int arrSize;
     cout << "enter the size of 1D array: ";
@@ -23,21 +36,8 @@ int main() {
 
     reverse(arr, arrSize);
 
-    cout << "{";
-	for (int i = 0; i < arrSize; i++) {
-		if (i == arrSize-1) {
-			cout << arr[i];
-		}
-		else {
-			cout << arr[i] << ", ";
-		}
-	}
-	cout << "}" << endl;
+    printArr(arr, arrSize);
 
     delete[] arr;
     return 0;
 }
-
-/*Question No. 2 (CLO No. 1) Marks: 6
-Write a program that dynamically allocates memory for 1D array. Make a function which reverses the array elements
-and a function to display the reversed array.*/
