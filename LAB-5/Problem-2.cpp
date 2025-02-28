@@ -52,7 +52,8 @@ int main() {
 	return 0;
 }
 
-/*A. Please declare a struct called Date which should carry 3 integer data members called day,
+/* Exersice 2: (10 marks)
+A. Please declare a struct called Date which should carry 3 integer data members called day,
 month and year.
 B. Now for the Student struct you declared in exercise1, add date_of_birth data member
 whose datatype would be Date.
