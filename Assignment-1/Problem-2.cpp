@@ -41,3 +41,7 @@ int main() {
     delete[] arr;
     return 0;
 }
+
+/*Question No. 2 (CLO No. 1) Marks: 6
+Write a program that dynamically allocates memory for 1D array. Make a function which reverses the array elements
+and a function to display the reversed array.*/
