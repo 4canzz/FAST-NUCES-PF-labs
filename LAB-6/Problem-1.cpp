@@ -1,3 +1,4 @@
+//(c) 24L - 6116
 #include <iostream>
 #include <string>
 using namespace std;
