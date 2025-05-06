@@ -38,4 +38,5 @@ int main(){
 }
 
 /*Exercise 1: (10 marks)
-Write a C++ program that dynamically allocates a 2D integer array of size rows × cols, takes input from the user, prints the array, and then deallocates the memory.*/
+Write a C++ program that dynamically allocates a 2D integer array of size rows × cols, takes input from the user, prints the array, 
+and then deallocates the memory.*/

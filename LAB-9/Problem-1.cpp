@@ -1,5 +1,4 @@
 //(c) 24L - 6116
-
 #include <iostream>
 using namespace std;
 

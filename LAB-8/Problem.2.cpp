@@ -1,6 +1,54 @@
-//(c) 24L - 6116
+//(c) 24L - 6065
+#include <iostream>
+#include <string>
+using namespace std;
 
-// TODO
+class DM {
+private:
+	double dm;
+	double dcm = dm * 100;
+	friend class DB;
+public:
+	DM(double d){
+		dm = d;
+		dcm = d * 100;
+	}
+	DM(){
+		dm = 0;
+		dcm = 0;
+	}
+};
+
+class DB{
+public:
+	void convertIntoFeet(DM d1){
+		d1.dm *= 3.28;
+		d1.dcm *= 0.0328;
+		cout << d1.dm << " feet" << endl;
+		cout << d1.dcm << " feet" << endl;
+	}
+	void convertIntoInches(DM d1){
+		d1.dm *= 39.37;
+		d1.dcm *= 0.3937;
+		cout << d1.dm << " inches" << endl;
+		cout << d1.dcm << " inches" << endl;
+	}
+	void print(DM d1){
+		cout << d1.dm << " meters" << endl;
+		cout << d1.dcm << " centimeters" << endl;
+	}
+};
+
+int main(){
+	DM a(58);
+	DB b;
+	b.print(a);
+	cout << endl;
+	b.convertIntoFeet(a);
+	cout << endl;
+	b.convertIntoInches(a);
+	return 0;
+}
 
 /*Exercise 2: (15 points)
 Every Circle has a center and a radius. Create a class CircleType that can store the center, the radius, and the color of the circle. Since the center of a circle is a point in the x-y plane, create a class PointType to store the x and y coordinate. Use class PointType to define the class CircleType. 

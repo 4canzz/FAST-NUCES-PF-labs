@@ -85,7 +85,7 @@ int main() {
     return 0;
 }
 
-/*Exercise 1:	(15 points)
+/*Exercise 1: (15 points)
 Design a class named Complex to represent complex numbers. The class should have two private data members of type double:
 real — to store the real part of the complex number
 imag — to store the imaginary part of the complex number

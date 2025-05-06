@@ -65,7 +65,7 @@ int main()
 	return 0;
 }
 
-/*Exercise 3:										(10 points)
+/*Exercise 3: (10 points)
 Consider the class of points in the xy plane. The location of each point is determined by the real numbers (x, y) specifying the 
 cartesian coordinates. 
 
