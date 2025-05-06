@@ -1,0 +1,24 @@
+CLO No. 2: Design a program using object-oriented programming paradigm. 
+How can you design a memory-efficient Sparse Matrix Calculator using Object-Oriented Programming(OOP)principles in C++. 
+You are required to create a class of sparse matrix. The data members of the class must be numberofrows,number of columns and a
+oointer to pointer to store the elements of the matrix. This class-baseddesigncanuse pointers, dynamic memory allocation, and
+efficient data storage techniques. Your programshouldsupportmatrixoperations such as addition, subtraction, multiplication, and
+transpose. Implement all the operationsonsparsematrix as member functions of the sparse matrix class. 
+
+Sparse Matrix: 
+A sparse matrix is a matrix in which most of the elements are zero. Storing all elements (including zeros) in memory is not efficient.
+To overcome this, we store only non-zero elements along with their positions. 
+
+Operations: 
+Output matrix: Output a sparse matrix in standard form (both zero and non-zero entries) 
+Addition: Implement a function to add two sparse matrices if they are compatible for addition andreturn the resultant. 
+Subtraction: Implement a function to subtract one sparse matrix from another if they are compatiblefor subtraction and return the resultant. 
+Multiplication: Implement a function to multiply two sparse matrices if they are compatible for multiplicationand return the resultant. 
+Transpose: Implement a function to transpose a sparse matrix. 
+
+Assignment Tasks: 
+1. Implement the add, subtract, multiply, and transpose functions using the given explanation. 
+2. Ensure memory efficiency by storing only non-zero elements and their positions. 
+3. Write a main function to demonstrate matrix addition, subtraction, multiplication, and transposewithappropriate examples. 
+4. Include comments to explain your code. 
+Good luck, and happy coding!!
