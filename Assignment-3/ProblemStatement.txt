@@ -1,0 +1,21 @@
+Problem Statement: 
+Construct a C++ software system for a vehicle rental company to manage a fleet of vehicles(mainly cars and trucks), customer records, 
+and rental transactions. Each vehicle shouldhavedetails such as model, manufacturing year, rental price per day, and availability 
+status. If a truckisrented price will include 5% commercial tax. Customer records should store their name, cnic and mobile number. 
+It should be possible to search for a customer’s rental history. Rental transactions should track the associated customer and vehicle, 
+rental start and end dates, and rental cost calculation based on price and duration. The system must track whether vehicles are 
+currentlyrented or available and update their status accordingly. Customers should be able to searchforvehicles by model, filter them 
+by rental price range, and check availability. The systemmust alsostore and manage dynamic lists of vehicles, customers, and rental 
+transactions. 
+
+Objectives: 
+∙ Design one class which when instantiated should be able to carry customer, vehicle or transactions data. 
+e.g. List<Vehicle*> *vehicles = new List <Vehicle*>(100); // able to carry upto 100 vehicles 
+List<Customer*> *clients = new List <Customer*>(50); // able to carry upto 50 customes
+∙ Customers should be able to search for and book available vehicles. 
+∙ Vehicle rental company should be able to search for rental history of a customer fromtransactions data. 
+∙ Vehicle rental company should be able to charge the customer the correct amount based on for how long the vehicle was rented, rent
+per day and if it was a truck then an additional 5% tax needs to be paid. 
+
+Deliverables 
+Your C++ code and a report (based on the template provided) on how you designed the solution to the problem 
