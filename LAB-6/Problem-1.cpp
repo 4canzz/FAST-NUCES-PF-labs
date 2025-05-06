@@ -9,7 +9,6 @@ private:
     string model;
     int price;
     int topSpeed;
-
 public:
     Bike();
     Bike(string b, string m, double p, int ts);
