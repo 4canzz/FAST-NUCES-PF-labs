@@ -1,0 +1,60 @@
+ENGLISH STUDENT: Furqan Hassan
+  Attendance: 68.5
+  Project: 80
+  Midterm: 75.25
+  Final Exam: 72
+  Final Grade: 75.025
+------------------------
+HISTORY STUDENT: Furqan Hassan
+  Term Paper: 75.75
+  Midterm: 65.5
+  Final Exam: 68.25
+  Final Grade: 69.1625
+------------------------
+MATH STUDENT: Furqan Hassan
+  Quizzes: 70, 20.5, 90
+  Test 1: 78.25
+  Test 2: 82.75
+  Final Exam: 87.5
+  Final Grade: 81.2667
+------------------------
+ENGLISH STUDENT: Humza Irfan
+  Attendance: 85
+  Project: 82.25
+  Midterm: 81.5
+  Final Exam: 76.75
+  Final Grade: 80.65
+------------------------
+HISTORY STUDENT: Humza Irfan
+  Term Paper: 80
+  Midterm: 81.5
+  Final Exam: 92.25
+  Final Grade: 85.425
+------------------------
+MATH STUDENT: Humza Irfan
+  Quizzes: 81.5, 83.25, 62.75
+  Test 1: 71.5
+  Test 2: 53
+  Final Exam: 65
+  Final Grade: 64.7083
+------------------------
+ENGLISH STUDENT: Adnan Ahmed
+  Attendance: 93.5
+  Project: 85
+  Midterm: 80
+  Final Exam: 88
+  Final Grade: 85.25
+------------------------
+HISTORY STUDENT: Adnan Ahmed
+  Term Paper: 78
+  Midterm: 51
+  Final Exam: 61.75
+  Final Grade: 62.05
+------------------------
+MATH STUDENT: Adnan Ahmed
+  Quizzes: 61.25, 93, 52
+  Test 1: 51.5
+  Test 2: 59
+  Final Exam: 62
+  Final Grade: 59.3
+------------------------

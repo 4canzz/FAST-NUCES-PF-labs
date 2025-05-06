@@ -1,0 +1,41 @@
+Experiment no. 10: Open - Ended Lab
+Objective:
+Design and implement a student grade management system that can imitate different types of students (English, History, and Math)
+with varying grading schemes. The system should be able to copy student data from files, compute final grades based on
+subject-specific criteria, and reproduce summary reports.
+
+Requirements:
+    Core Functionality:
+        Create a system to store and manage student information including:
+            First name
+            Last name
+            Course type (English, History, or Math)
+        Implement grade calculation functionality where each course type has its own grading scheme:
+            English: Attendance (10%), Project (30%), Midterm (30%), Final Exam (30%)
+            History: Term Paper (25%), Midterm (35%), Final Exam (40%)  
+            Math: 3 Quizzes (averaged for 10%), Test 1 (25%), Test 2 (25%), Final Exam (40%)
+    The system should support different numeric data types for marks (int, float, double, etc.) using appropriate C++ features.
+
+Technical Constraints:
+    Mandatory File Separation:
+    Header Files (.h): Class declarations, templates, and constants.
+    Source Files (.cpp): Method implementations.
+    main.cpp: Driver program (minimal logic, primarily uses manager class).
+
+Additional Requirements:
+    Design your own class hierarchy and relationships
+    Identify which functions should be virtual
+    Create a UML diagram of your design before implementation
+    Implement file I/O for importing student data and exporting reports
+    Ensure your solution is flexible enough to handle different numeric types for grades
+
+Deliverables:
+-UML diagram of your class design
+-Source code implementing your solution
+-Sample input files with test data
+-Generated output reports
+Notes:
+-Consider how to best organize your classes to minimize code duplication
+-Think about how to handle the different grading schemes polymorphically
+-Pay attention to memory management when using dynamic allocation
+-Your solution should demonstrate good object-oriented design principles
