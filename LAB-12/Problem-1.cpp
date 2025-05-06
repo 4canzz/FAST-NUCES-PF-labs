@@ -1,3 +1,4 @@
+//(c) 24L - 6116
 #include <iostream>
 #include <string>
 using namespace std;
@@ -26,3 +27,26 @@ int main()
 	system("pause");
 	return 0;
 }
+
+/*Exercise 1: (10 points)
+Study the myMAX function provided below. You are required to create a C++ template based myMAX function and test it on different
+built-in data types. 
+//Make a template out of this function. Don't forget the return type.
+int myMax(int one, int two)
+{
+	Int bigger;
+	if(one < two)
+		bigger = two;
+	else
+	bigger = one;
+	return bigger;
+}
+	
+int main()
+{
+	int i_one = 3, i_two = 5;
+	cout<<"The max of "<<i_one<<" and "<<i_two<<" is "
+	<<myMax(i_one, i_two) <<endl;
+//Test your template on float and string types
+	return 0;
+}*/

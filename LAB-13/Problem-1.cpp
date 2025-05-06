@@ -1,3 +1,4 @@
+//(c) 24L-6116
 #include <iostream>
 using namespace std;
 
@@ -83,3 +84,54 @@ int main() {
 
     return 0;
 }
+
+/*Exercise 1:	(15 points)
+Design a class named Complex to represent complex numbers. The class should have two private data members of type double:
+real — to store the real part of the complex number
+imag — to store the imaginary part of the complex number
+Implement overloaded operator functions to perform operations on two Complex objects.
+
+1. *(Multiplication)
+2. +(Addition)
+3. –(Subtraction)
+4. /(Division)
+5. =(Assignment)
+6. == (Equality Comparator – two equal signs without space) The Class definition is given below:
+
+class comp
+{
+double real; double imag;
+public:
+//	default constructor
+//	function that set real and imag part of complex no
+//	function that print complex number
+//	Opertator “+” for addition
+//	Opertator “-” for Subtraction
+//	Opertator “*” for Multiplication
+//	Opertator “/” for Division
+//	Opertator “==” for check both complex are equal or not
+//	Opertator “=” for assignment
+};
+
+Your program should run for the following main().
+int main()
+{
+    comp n1,n2,n3;
+
+    n1.setpara(2,3);
+    n2.setpara(1,4); n3=n1;
+
+    n3.show();
+
+    (n1+n2).show();
+    n3=n1*n2; n3.show();
+
+    n3=n1-n2; n3.show();
+    n3=n1/n2; n3.show();
+
+    if(n1==n2)
+    cout<<"Both no have same real and imag part "<<endl;
+    else
+    cout<<"Unequal !!!"<<endl;
+    return 0;
+}*/

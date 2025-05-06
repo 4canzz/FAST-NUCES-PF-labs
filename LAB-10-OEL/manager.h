@@ -1,3 +1,4 @@
+//(c) 24L - 6116
 #pragma once
 #include "student.h"
 #include <fstream>

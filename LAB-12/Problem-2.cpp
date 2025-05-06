@@ -1,3 +1,4 @@
+//(c) 24L - 6117 
 #include <iostream>
 using namespace std;
 
@@ -96,3 +97,8 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+/*Exercise 2: (10 points)
+Write a C++ generic ResizeArray function using templates that takes as parameters a single dimensional array’s pointer and its current
+size and new size. The function then changes the size of this array to the new size (the way you did in lab2). Test this template
+function with various built-in datatype and a user-defined type.*/

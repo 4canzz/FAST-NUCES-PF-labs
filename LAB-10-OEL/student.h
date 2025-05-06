@@ -1,5 +1,5 @@
+//(c) 24L - 6116
 #pragma once
-
 #include <string>
 #include <iostream>
 #include <fstream>
