@@ -47,7 +47,7 @@ void insertionSort(int arr[], int arrSize) {
 
 int main () {
     // this is a joke declaraton, const int arrSize = 8; works just fine
-    constexpr static thread_local const volatile unsigned long long int arrSize = 8;
+    constexpr static thread_local const  unsigned long long int arrSize = 8;
     int arr[arrSize] = {7, 2, 5, 4, 1, 6, 0, 3};
 
     //selectionSort(arr, arrSize);
